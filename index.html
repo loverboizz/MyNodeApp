@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Offline Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsmediatags@3.9.7/dist/jsmediatags.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>🎵 MyPlayer</h2>
+            <ul>
+                <li>🏠 Home</li>
+                <li>🔍 Search</li>
+                <li>📚 Library</li>
+            </ul>
+            <input type="file" id="fileInput" accept="audio/*" multiple />
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <h2>Playlist</h2>
+            <div id="trackList"></div>
+        </main>
+    </div>
+
+    <!-- Player bar -->
+    <footer class="player-bar">
+        <div class="track-info">
+            <img id="footerCoverArt" src="https://via.placeholder.com/60" alt="Cover Art"
+                style="height:60px;width:60px;object-fit:cover;margin-right:10px;border-radius:8px;">
+            <div>
+                <div id="songTitle">Chưa có bài hát</div>
+                <div id="songArtist" style="font-size:12px;color:gray;">Nghệ sĩ</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playBtn">▶️</button>
+            <button id="nextBtn">⏭️</button>
+        </div>
+
+        <div class="progress">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="seekBar" min="0" value="0" step="1">
+            <span id="duration">0:00</span>
+        </div>
+    </footer>
+
+    <audio id="player"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
