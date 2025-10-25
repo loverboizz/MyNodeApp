@@ -3,9 +3,6 @@
 "version": "1.0.0",
 "description": "node app ",
 "main": "app.js",
-"engines": {
-"node": ">=18.0.0"
-},
 "scripts": {
 "start": "node app.js"
 },
@@ -16,7 +13,7 @@
 "author": "",
 "license": "ISC",
 "bugs": {
-"url": "https://github.com/loverboizz/MyNodeApp.git"
+"url": ""
 },
-"homepage": "https://github.com/loverboizz/MyNodeApp.git"
+"homepage": ""
 }
